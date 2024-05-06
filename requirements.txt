@@ -1,4 +1,2 @@
 flask
-request
-jsonify
 flask-cors
