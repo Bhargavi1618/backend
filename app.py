@@ -6,7 +6,7 @@ app = Flask(__name__)
 #CORS(app, resources={r"/*": {"origins": "*"}})  # Allow CORS for all origins
 CORS(app)
 @app.route('/receive_response', methods=['POST'])
-@cross_origin()  # Allow CORS for this route
+@cross_origin(origins='https://magnificent-salamander-454500.netlify.app')  # Allow CORS for this route
 def receive_response():
     print("Received a request!")
     response_data = request.json
