@@ -8,7 +8,7 @@ CORS(app)
 @app.route('/receive_response', methods=['POST'])
 @cross_origin(origins='https://magnificent-salamander-454500.netlify.app')  # Allow CORS for this route
 def receive_response():
-    print("Received a request! here i am modifying this file for backbranch")
+    print("Received a request! here i am modifying this file from newbackbranch")
     response_data = request.json
 
     response_data = request.json
